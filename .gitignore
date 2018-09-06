@@ -4,14 +4,14 @@
 
 .DS_Store
 
-/CameraControl/[Ll]ibrary/
-/CameraControl/[Tt]emp/
-/CameraControl/[Oo]bj/
-/CameraControl/[Bb]uild/
-/CameraControl/[Bb]uilds/
-/CameraControl/Assets/AssetStoreTools*
+/UVCCamera/[Ll]ibrary/
+/UVCCamera/[Tt]emp/
+/UVCCamera/[Oo]bj/
+/UVCCamera/[Bb]uild/
+/UVCCamera/[Bb]uilds/
+/UVCCamera/Assets/AssetStoreTools*
 
-/CameraControl/*.png
+/UVCCamera/*.png
 
 # Visual Studio 2015 cache directory
 /.vs/
