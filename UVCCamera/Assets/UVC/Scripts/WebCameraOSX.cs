@@ -17,8 +17,12 @@ public class WebCameraOSX : MonoBehaviour {
     // Use this for initialization
     void Start(){
 
+        int width = 1920;
+        int height = 1080;
+        int fps = 30;
+
         cameraControl = new UVCControl();
-        cameraControl.UseCameraLocate(0x14200000);
+        cameraControl.UseCameraLocate(0x14100000);
 
         cameraControl.AutoFocus = false;
         focus = cameraControl.AbsoluteFocus;
@@ -28,8 +32,8 @@ public class WebCameraOSX : MonoBehaviour {
         foreach (WebCamDevice device in devices){
             Debug.Log("WebCamDevice " + device.name);
         }
-
-        webcamtex = new WebCamTexture(devices[1].name); 
+        webcamtex = new WebCamTexture(devices[0].name, width, height, fps);
+        // webcamtex = new WebCamTexture(devices[0].name); 
         
         Renderer _renderer = GetComponent<Renderer>();
         _renderer.material.mainTexture = webcamtex;
