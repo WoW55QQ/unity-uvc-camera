@@ -2,7 +2,7 @@ This is an asset for control UVC(USB Video Class) webcamera.
 
 ### Support
 #### OS
-Windows10 or OSX
+Windows10 or OSX 10.12
 
 #### Camera device
 Logitech C920 WebCamera
